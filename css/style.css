@@ -119,6 +119,18 @@ main {
   max-width: 1640px;
 }
 
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
 #icons {
   visibility: hidden;
   display: none;
@@ -289,7 +301,7 @@ main {
 .header__btn {
   border: none;
   border-radius: 2px;
-  padding: 8px 16px;
+  padding: 8px 16px 10px;
   color: #fff;
   cursor: pointer;
   transition: all 0.5s ease 0s;
@@ -450,4 +462,73 @@ main {
 
 .footer__social > li > a:hover {
   background-color: #7f8b99;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+.popup__wrapper {
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 960px;
+  border-radius: 6px;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.popup__close {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.popup__close::before,
+.popup__close::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: calc(50 - 1px);
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+
+.popup__close::before {
+  transform: rotate(45deg);
+}
+
+.popup__close::after {
+  transform: rotate(-45deg);
+}
+
+.popup__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.popup__desc {
+  margin: 0;
+  max-width: 330px;
+  text-align: center;
+  letter-spacing: 0.05px;
 }

@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="overlay"></div>
     <header class="header">
         <div class="container">
             <div class="header__row">
@@ -286,6 +287,46 @@
             </div>
         </div>
     </footer>
+    <div class="popup popup_login">
+        <div class="popup__wrapper">
+            <button class="popup__close"></button>
+            <div class="popup__left">
+
+            </div>
+            <div class="popup__right">
+                <img class="popup__logo" src="" alt="">
+                <p class="popup__desc">Войди, чтобы иметь возможность наслаждаться всем функционалом</p>
+                <div class="popup__title">Вход</div>
+                <ul class="popup__social">
+                    <li>
+                        <a href="#">Войти с помощью VK</a>
+                    </li>
+                    <li>
+                        <a href="#">Войти с помощью Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Войти с помощью Google</a>
+                    </li>
+                    <li>
+                        <a href="#">Войти с помощью OK</a>
+                    </li>
+                </ul>
+                <div class="popup__email">или с помощью email</div>
+                <form class="popup__form" action="/">
+                    <input type="email" name="email" placeholder="Введите Email">
+                    <input type="password" name="password" placeholder="Введите пароль">
+                    <button name="login">Войти</button>
+                    <div>
+                        <a href="#">Зарегистрироваться</a>
+                        <a href="#">Забыли пароль?</a>
+                    </div> 
+                </form>
+                <p class="popup__legacy">
+                    Присоединившись, вы соглашаетесь с <a href="#">Условиями использования сервиса</a> и <a href="#">Политикой конфиденциальности</a>
+                </p>
+            </div>
+        </div>
+    </div>
     <svg id="icons">
         <symbol id="arhive" viewBox="0 0 15 11" xmlns="http://www.w3.org/2000/svg">
             <path d="M3.976,5.366a3.833,3.833,0,0,1,1.6-.387H12.36v-1.3a1.757,1.757,0,0,0-.538-1.287,1.756,1.756,0,0,0-1.287-.538H6.1V1.589A1.756,1.756,0,0,0,5.565.3,1.757,1.757,0,0,0,4.278-.236H1.671A1.756,1.756,0,0,0,.383.3,1.756,1.756,0,0,0-.154,1.589V9.411q0,0.033,0,.1t0,0.1l0.041-.049L2.64,6.339A3.8,3.8,0,0,1,3.976,5.366ZM14.938,6.127a1.1,1.1,0,0,0-.493-0.106H5.581a2.827,2.827,0,0,0-1.169.289,2.762,2.762,0,0,0-.982.7L0.693,10.242a0.839,0.839,0,0,0-.253.538,0.362,0.362,0,0,0,.216.35,1.1,1.1,0,0,0,.493.106h8.864a2.829,2.829,0,0,0,1.169-.289,2.762,2.762,0,0,0,.982-0.7L14.9,7.015a0.838,0.838,0,0,0,.252-0.538A0.362,0.362,0,0,0,14.938,6.127Z"/>
